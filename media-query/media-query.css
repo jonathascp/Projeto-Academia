@@ -39,7 +39,7 @@
     }
 
     .aulas_item {
-        width: 100%;
+        width: 300px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -58,6 +58,10 @@
         align-items: center;
         justify-content: flex-start;
         padding: 0 50px;
+    }
+
+    .planos::-webkit-scrollbar {
+        width: 0px;
     }
 
     .planos_plano {
@@ -82,5 +86,14 @@
 
     .container_informacao a {
         font-size: .8em;
+    }
+
+    #aulas > .container_div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        max-width: 600px;
+        overflow-x: hidden;
     }
 }

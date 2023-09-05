@@ -19,6 +19,14 @@
         justify-content: center;
     }
 
+    /* #aulas > .container_div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        overflow: auto;
+    } */
+
     .container_div div {
         display: flex;
         flex-direction: column;
@@ -42,8 +50,37 @@
         width: 70%;
     }
 
+    .planos {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        overflow: auto;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 50px;
+    }
+
+    .planos_plano {
+        width: 270px;
+    }
+
+    .planos_plano > p:nth-child(2) {
+        font-size: .9em;
+    }
+
     #planos > p {
         font-size: .8em;
     }
-  
+
+    .informacao {
+        gap: 20px;
+    }
+    
+    .container_informacao p{
+        font-size: 1em;
+    }
+
+    .container_informacao a {
+        font-size: .8em;
+    }
 }

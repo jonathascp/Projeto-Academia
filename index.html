@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="media-query/media-query.css">
+
     <title>Academia</title>
 </head>
 <body>
     <header>
-        <h1>Academia</h1>
+        <h1 id="home">Academia</h1>
         <nav>
             <ul class="lista">
-                <li class="item_lista"><a href="#">Home</a></li>
-                <li class="item_lista"><a href="#">Nosso espaço</a></li>
-                <li class="item_lista"><a href="#">Aulas e treinos</a></li>
-                <li class="item_lista"><a href="#">Matricule-se já</a></li>
+                <li class="item_lista"><a href="#home">Home</a>
+                </li>
+                <li class="item_lista"><a href="#espaço">Nosso espaço</a></li>
+                <li class="item_lista"><a href="#aulas">Aulas e treinos</a></li>
+                <li class="item_lista"><a href="#planos">Matricule-se já</a></li>
             </ul>
         </nav>
+        <img src="imagens/icones/menu-hamburguer.svg" alt="menu">
     </header>
 
     <main>
-        <section class="container">
+        <section id="espaço" class="container">
             <h2>Nosso Espaço</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
             <div class="container_div">
@@ -39,7 +43,7 @@
             </div>
         </section>
 
-        <section class="container">
+        <section id="aulas" class="container">
             <h2>Aulas e treinos</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
             <div class="container_div">
@@ -85,20 +89,27 @@
             </div>
         </section>
 
-        <section class="container">
+        <section id="planos" class="container">
             <h2>Conheça nossos planos</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
             <div class="planos">
-                <div class="planos_titulo">
-                    <p>Plano Simples</p>
-                    <p>Plano Premium</p>
+                <div class="planos_plano">
+                    <p><strong>Plano Simples</strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium.</p>
+                    <p>R$ 19,90 /mês</p>
                 </div>
-                <div class="planos_descricao">
-                    <p>Lorem ipsulum</p>
-                    <p>Lorem ipsulum</p>
-                    <p>Lorem ipsulum</p>
+                <div class="planos_plano">
+                    <p><strong>Plano Premium</strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium.</p>
+                    <p>R$ 39,90 /mês</p>
+                </div>
+                <div class="planos_plano">
+                    <p><strong>Plano Black</strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium.</p>
+                    <p>R$ 69,90 /mês</p>
                 </div>
             </div>
+            <button>Começar agora</button>
         </section>
     </main>
 
@@ -143,6 +154,7 @@
             <p>faleconosco@email.com</p>
             <p>Academia de Ginástica e Musculação S.A</p>
             <p>CNPJ : 00.000.000/0000-00</p>
+            <p>Feito por <a href="https://www.linkedin.com/in/jonathas-dos-anjos-502706271/">Jonathas dos Anjos.</a></p>
         </div>
     </footer>
 </body>

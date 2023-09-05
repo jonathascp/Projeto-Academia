@@ -1,0 +1,49 @@
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    header > img {
+        display: block;
+        width: 30px;
+    }
+
+    .lista {
+        display: none;
+    }
+
+    .container_div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container_div div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container_div img {
+        width: 70%;
+    }
+
+    .aulas_item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aulas_item > p, .duracao_intensidade, .descricao, .aulas_item > img {
+        width: 70%;
+    }
+
+    #planos > p {
+        font-size: .8em;
+    }
+  
+}

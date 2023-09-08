@@ -1,15 +1,25 @@
 @media screen and (min-width: 320px) and (max-width: 480px) {
     header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
         padding: 10px;
     }
-
-    header > img {
-        display: block;
-        width: 30px;
+ 
+    header > h1 {
+        font-size: 1.3em;
     }
 
     .lista {
-        display: none;
+        display: flex;
+        justify-content: center;
+        gap: 17px;
+        padding: 10px 0;
+    }
+
+    .item_lista > a {
+        font-size: .9em;
     }
 
     .container_div {
@@ -27,7 +37,7 @@
         overflow: auto;
     } */
 
-    .container_div div {
+    .container_div > div {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -47,7 +57,7 @@
     }
 
     .aulas_item > p, .duracao_intensidade, .descricao, .aulas_item > img {
-        width: 70%;
+        width: 100%;
     }
 
     .planos {
@@ -57,7 +67,7 @@
         overflow: auto;
         align-items: center;
         justify-content: flex-start;
-        padding: 0 50px;
+        padding: 0 60px;
     }
 
     .planos::-webkit-scrollbar {
@@ -93,7 +103,21 @@
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
-        max-width: 600px;
-        overflow-x: hidden;
+        max-width: 100%;
+        overflow-x: auto;
+        padding: 0 60px;
+    }
+
+    #aulas > .container_div::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    .descricao , .duracao_intensidade {
+        width: 300px;
+    }
+
+    .duracao_intensidade {
+        display: flex;
+        padding: 0 20px;
     }
 }
